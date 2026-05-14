@@ -8,109 +8,213 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            max-width: 800px;
-            color: #333;
+            line-height: 1.7;
+            margin: 40px auto;
+            max-width: 900px;
+            color: #e5e7eb;
+            background-color: #0f172a;
         }
+
         h1, h2 {
-            color: #222;
+            color: #00e5ff;
         }
+
         p {
             margin-bottom: 15px;
         }
+
         ul {
             margin-left: 20px;
         }
+
         .container {
-            padding: 20px;
+            background: #111827;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #334155;
+            margin-top: 30px;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        a {
+            color: #00e5ff;
         }
     </style>
 </head>
+
 <body>
+
     <div class="container">
+
         <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> <span id="date"></span></p>
 
         <p>
-            This Privacy Policy applies to the mobile application 
-            <strong id="appName"></strong> ("App") developed and published by 
-            <strong id="companyName"></strong> on the Google Play Store.
+            <strong>Effective Date:</strong>
+            <span id="date"></span>
+        </p>
+
+        <p>
+            This Privacy Policy applies to the mobile application
+            <strong id="appName"></strong>
+            developed and published by
+            <strong id="companyName"></strong>.
+        </p>
+
+        <p>
+            By using the App, you agree to the practices described in this Privacy Policy.
         </p>
 
         <h2>1. Information Collection and Use</h2>
+
         <p>
-            The App developed by <strong id="companyName2"></strong> does not collect, store, or share any personal information from users.
+            <strong id="appName2"></strong> is designed to help users track habits, earn XP, manage streaks, and monitor productivity progress.
         </p>
 
-        <p>We do not collect information such as:</p>
+        <p>
+            We do not collect, store, sell, or share personal information such as:
+        </p>
+
         <ul>
             <li>Name</li>
             <li>Email address</li>
             <li>Phone number</li>
-            <li>Location data</li>
-            <li>Device identifiers</li>
+            <li>Location information</li>
+            <li>Passwords</li>
+            <li>Contacts</li>
+            <li>Photos or media files</li>
         </ul>
 
-        <h2>2. Third-Party Services</h2>
         <p>
-            The App does not use any third-party services that collect user data.
-        </p>
-        <p>
-            (If the App uses ads, analytics, or other services in the future, this Privacy Policy will be updated accordingly.)
+            All habit tracking data is stored locally on the user’s device only.
         </p>
 
-        <h2>3. Permissions</h2>
+        <h2>2. Notifications</h2>
+
         <p>
-            The App may request basic permissions only if required for core functionality. These permissions are not used to collect or share user data.
+            The App may use local notifications to remind users to complete habits and maintain streaks.
         </p>
 
-        <h2>4. Children’s Privacy</h2>
         <p>
-            The App is safe for users of all ages. We do not knowingly collect any personal information from children under 13.
+            Notifications are generated locally on the device and no notification data is sent to external servers.
         </p>
 
-        <h2>5. Data Security</h2>
+        <h2>3. Third-Party Services</h2>
+
         <p>
-            Since we do not collect or store user data, there is no risk of personal data being accessed, stored, or shared.
+            The App currently does not use third-party analytics, advertising SDKs, or external tracking services.
         </p>
 
-        <h2>6. Changes to This Privacy Policy</h2>
         <p>
-            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.
+            If third-party services are added in future updates, this Privacy Policy will be updated accordingly.
         </p>
 
-        <h2>7. Contact Us</h2>
+        <h2>4. Data Storage</h2>
+
         <p>
-            If you have any questions or concerns about this Privacy Policy, you can contact us at:
+            Habit progress, XP, streaks, and achievements are stored locally on your device using secure local storage technologies.
         </p>
-        <p>📧 <span id="email"></span></p>
+
+        <p>
+            We do not upload or back up user data to cloud servers.
+        </p>
+
+        <h2>5. Permissions</h2>
+
+        <p>
+            The App may request notification permission in order to send habit reminder notifications.
+        </p>
+
+        <p>
+            No permissions are used to collect personal information.
+        </p>
+
+        <h2>6. Children's Privacy</h2>
+
+        <p>
+            The App is suitable for users of all ages.
+            We do not knowingly collect personal information from children under the age of 13.
+        </p>
+
+        <h2>7. Security</h2>
+
+        <p>
+            Since user data remains stored locally on the device, users maintain full control over their information.
+        </p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+
+        <p>
+            We may update this Privacy Policy from time to time.
+            Any changes will be reflected on this page with an updated effective date.
+        </p>
+
+        <h2>9. Contact Us</h2>
+
+        <p>
+            If you have any questions regarding this Privacy Policy, you may contact us at:
+        </p>
+
+        <p>
+            📧 <span id="email"></span>
+        </p>
 
         <hr>
+
         <p>
-            <strong>Summary:</strong> The App <strong id="appName2"></strong> developed by 
-            <strong id="companyName3"></strong> does not collect or share any user data.
+            <strong>Summary:</strong>
+            <strong id="appName3"></strong>
+            developed by
+            <strong id="companyName2"></strong>
+            does not collect, sell, or share personal user data.
         </p>
+
     </div>
 
     <script>
-        // 🔥 CHANGE THESE VALUES FOR EACH APP
-        const APP_NAME = "FarmConnekt Uganda";
-        const COMPANY_NAME = "Bitlife Technologies";
-        const EMAIL = "ariangu@gmail.com";
-        const DATE = "April 28, 2026";
 
-        // Auto-fill everywhere
-        document.getElementById("pageTitle").innerText = "Privacy Policy - " + APP_NAME;
-        document.getElementById("appName").innerText = APP_NAME;
-        document.getElementById("appName2").innerText = APP_NAME;
+        // APP DETAILS
 
-        document.getElementById("companyName").innerText = COMPANY_NAME;
-        document.getElementById("companyName2").innerText = COMPANY_NAME;
-        document.getElementById("companyName3").innerText = COMPANY_NAME;
+        const APP_NAME = "LevelUp";
+        const COMPANY_NAME = "Relvartec";
+        const EMAIL = "klnrapha@gmail.com";
+        const DATE = "May 14, 2026";
 
-        document.getElementById("email").innerText = EMAIL;
-        document.getElementById("date").innerText = DATE;
+
+        // AUTO FILL
+
+        document.getElementById("pageTitle").innerText =
+            "Privacy Policy - " + APP_NAME;
+
+        document.getElementById("appName").innerText =
+            APP_NAME;
+
+        document.getElementById("appName2").innerText =
+            APP_NAME;
+
+        document.getElementById("appName3").innerText =
+            APP_NAME;
+
+        document.getElementById("companyName").innerText =
+            COMPANY_NAME;
+
+        document.getElementById("companyName2").innerText =
+            COMPANY_NAME;
+
+        document.getElementById("email").innerText =
+            EMAIL;
+
+        document.getElementById("date").innerText =
+            DATE;
+
     </script>
+
 </body>
 </html>
